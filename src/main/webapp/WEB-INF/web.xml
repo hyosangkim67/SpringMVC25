@@ -20,6 +20,9 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
 		</init-param> <!-- view를 담당하는 파일 위치 -->
+		
+		<init-param>throwExceptionIfNoHandler</init-param>
+		<param-value>true</param-value>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 		

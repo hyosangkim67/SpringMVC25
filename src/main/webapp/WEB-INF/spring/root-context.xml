@@ -24,9 +24,7 @@
 
 		<property name="username" value="book_ex"></property>
 		<property name="password" value="book_ex"></property>
-	</bean>  <!-- jdbc 1,2단계설정 -->
-
-	<!-- HikariCP configuration 커낵션 풀 설정용 -->
+	</bean>  <!-- jdbc 1,2단계설정 -->	<!-- HikariCP configuration 커낵션 풀 설정용 -->
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"
 		destroy-method="close">
 		<constructor-arg ref="hikariConfig" />
