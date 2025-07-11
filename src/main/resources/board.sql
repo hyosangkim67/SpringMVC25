@@ -16,20 +16,24 @@ create table tbl_board(
 alter table tbl_board add constraint pk_board primary key (bno);
 -- tbl_board 구조변경(수정) 기본기를 bno로 지정함.
 
--- 더미데이터 넣기
-insert into TBL_BOARD(bno, title, content, writer) 
-values (seq_board.nextval, '테스트제목1', '테스트내용1', 'user00');
-insert into TBL_BOARD(bno, title, content, writer)
-values (seq_board.nextval, '테스트제목2', '테스트내용2', 'user00');
-insert into TBL_BOARD(bno, title, content, writer)  
-values (seq_board.nextval, '테스트제목3', '테스트내용3', 'user00');
-insert into TBL_BOARD(bno, title, content, writer)
-values (seq_board.nextval, '테스트제목4', '테스트내용4', 'user00');
-insert into TBL_BOARD(bno, title, content, writer) 
-values (seq_board.nextval, '테스트제목5', '테스트내용5', 'user00');
-insert into TBL_BOARD(bno, title, content, writer) 
-values (seq_board.nextval, '테스트제목6', '테스트내용6', 'user00');
-insert into TBL_BOARD(bno, title, content, writer) 
-values (seq_board.nextval, '테스트제목7', '테스트내용7', 'user00');
-insert into TBL_BOARD(bno, title, content, writer) 
-values (seq_board.nextval, '테스트제목8', '테스트내용8', 'user00');
+
+-- 더미데이터 입력하기
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목1', '테스트 내용1','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목2', '테스트 내용2','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목3', '테스트 내용3','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목4', '테스트 내용4','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목5', '테스트 내용5','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목6', '테스트 내용6','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목7', '테스트 내용7','user00');
+insert into TBL_BOARD (bno, title, content, writer) 
+values (seq_board.nextval, '테스트제목8', '테스트 내용8','user00');
+
+select * from tbl_board;
+
